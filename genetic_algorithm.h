@@ -30,6 +30,8 @@ public:
     void avaliarPopulacao();
     void ordenarPopulacao();
     void avaliarObjetivo(individual ind);
+    void cruzamentoUniforme(individual pai1, individual pai2);
+    void cruzamentoMaioria(individual pai1, individual pai2);
 
 };
 

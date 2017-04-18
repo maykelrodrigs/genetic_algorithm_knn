@@ -15,12 +15,12 @@ class individual
 
 public:
 
-    individual(int variavel);
+    individual(int variaveis);
 
     bool *getCromossomo() const;
     int getNumero_variaveis() const;
 
-    void setCromossomo(bool *value);
+    void setCromossomo(bool value, int index);
     void setNumero_variaveis(int value);
 };
 

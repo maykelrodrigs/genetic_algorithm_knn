@@ -10,9 +10,9 @@ bool *individual::getCromossomo() const
     return cromossomo;
 }
 
-void individual::setCromossomo(bool *value)
+void individual::setCromossomo(bool value, int index)
 {
-    cromossomo = value;
+    cromossomo[index] = value;
 }
 
 int individual::getNumero_variaveis() const
@@ -29,18 +29,15 @@ void individual::setNumero_variaveis(int value)
 /*!
 
  */
-individual::individual(int variavel)
+
+individual::individual(int variaveis)
 {
 
-    cromossomo = new bool[variavel];
-
+    cromossomo  = new bool[variaveis];
     acuracia    = 0;
     dominancia  = 0;
     crowding    = 0;
     numero_variaveis = 0;
-
-    for (int i = 0; i < variavel; i++ )
-        cromossomo[i] = rand() % 1;
 
 }
 
