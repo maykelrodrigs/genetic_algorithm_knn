@@ -4,11 +4,11 @@
 #include <vector>
 #include <individual.h>
 
-class genetic_algorithm
+class GeneticAlgorithm
 {
 private:
 
-    std::vector <individual> populacao;
+    std::vector <Individual> populacao;
     int individuo_vencedor;
 
     int tamanho_populacao;
@@ -23,15 +23,25 @@ private:
     int ponto_corte;
 
 public:
-    genetic_algorithm();
+
+    GeneticAlgorithm();
 
     void execute();
+
     void iniciarPopulacao();
     void avaliarPopulacao();
     void ordenarPopulacao();
-    void avaliarObjetivo(individual ind);
-    void cruzamentoUniforme(individual pai1, individual pai2);
-    void cruzamentoMaioria(individual pai1, individual pai2);
+    void avaliarObjetivo(Individual &ind);
+
+    void cruzamentoUniforme(Individual pai1, Individual pai2);
+    void cruzamentoMaioria(Individual pai1, Individual pai2);
+
+    void mutacaoGuiada(Individual &ind);
+    void mutacaoMaiorPeso(Individual &ind);
+
+    void avaliarDominancia(Individual &ind);
+
+    Individual torneio();
 
 };
 

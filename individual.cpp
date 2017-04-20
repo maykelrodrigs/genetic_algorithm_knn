@@ -6,7 +6,7 @@
 
  */
 
-individual::individual(int variaveis)
+Individual::Individual(int variaveis)
 {
 
     cromossomo  = new bool[variaveis];

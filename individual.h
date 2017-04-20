@@ -3,7 +3,7 @@
 
 #include <vector>
 
-class individual
+class Individual
 {
 
 public:
@@ -18,7 +18,7 @@ public:
 
 public:
 
-    individual(int variaveis);
+    Individual(int variaveis);
 };
 
 #endif // INDIVIDUAL_H
