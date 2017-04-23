@@ -8,7 +8,7 @@ class Sample
 
 public:
 
-    std::vector< std::vector <double> > dados;
+    std::vector< std::vector <double> > variaveis;
     std::vector<bool> tipo;
     std::vector<double> peso_variaveis;
 

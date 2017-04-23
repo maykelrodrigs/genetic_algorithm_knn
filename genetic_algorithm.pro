@@ -18,11 +18,4 @@ HEADERS += \
     genetic_algorithm.h \
     individual.h \
     sample.h \
-    libxls/brdb.c.h \
-    libxls/brdb.h \
-    libxls/ole.h \
-    libxls/xls.h \
-    libxls/xlsstruct.h \
-    libxls/xlstool.h \
-    libxls/xlstypes.h
 

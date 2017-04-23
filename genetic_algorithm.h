@@ -25,8 +25,7 @@ public:
     void removerIndividuos(int qtd);
     void avaliarObjetivo(Individual &ind);
 
-    void cruzamentoUniforme(Individual pai1, Individual pai2);
-    void cruzamentoMaioria(Individual pai1, Individual pai2);
+    void cruzamento(Individual pai1, Individual pai2);
 
     void mutacaoGuiada(Individual &ind);
     void mutacaoMaiorPeso(Individual &ind);

@@ -15,8 +15,8 @@ using namespace std;
 Sample::Sample()
 {
 
-    populacao           = 1000;
-    geracao             = 1000;
+    populacao           = 500;
+    geracao             = 100;
     geracao_alteracao   = 10; // porcentagem
 
     tx_mutacao_gene     = 0.05;
@@ -63,10 +63,10 @@ void Sample::lerAmostras( char file[] )
 
             aux++;
         }
-        dados.emplace_back( dados_line );
+        variaveis.emplace_back( dados_line );
     }
 
-    dados.pop_back(); // está pegando o ultimo elemento zerado
+    variaveis.pop_back(); // está pegando o ultimo elemento zerado
     tipo.pop_back(); // está pegando o ultimo elemento zerado
 
     arquivo.close();
