@@ -3,24 +3,15 @@
 
 #include <vector>
 #include <individual.h>
+#include <sample.h>
 
 class GeneticAlgorithm
 {
 private:
 
     std::vector <Individual> populacao;
-    int individuo_vencedor;
 
-    int tamanho_populacao;
-    int numero_geracoes;
-    int geracao_atual;
-
-    double tx_cruzamento;
-    double tx_mutacao;
-
-    int total_variaveis;
-    int total_amostras;
-    int ponto_corte;
+    Sample *dados;
 
 public:
 
@@ -31,6 +22,7 @@ public:
     void iniciarPopulacao();
     void avaliarPopulacao();
     void ordenarPopulacao();
+    void removerIndividuos(int qtd);
     void avaliarObjetivo(Individual &ind);
 
     void cruzamentoUniforme(Individual pai1, Individual pai2);

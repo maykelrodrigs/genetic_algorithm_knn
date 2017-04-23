@@ -8,9 +8,9 @@ class Individual
 
 public:
 
-    bool *cromossomo;
+    std::vector<bool> cromossomo;
 
-    int numero_variaveis;
+    int nr_variaveis;
     double acuracia;
 
     int dominancia;
@@ -18,7 +18,7 @@ public:
 
 public:
 
-    Individual(int variaveis);
+    Individual();
 };
 
 #endif // INDIVIDUAL_H

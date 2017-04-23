@@ -6,14 +6,12 @@
 
  */
 
-Individual::Individual(int variaveis)
+Individual::Individual()
 {
-
-    cromossomo  = new bool[variaveis];
-    acuracia    = 0;
-    dominancia  = 0;
-    crowding    = 0;
-    numero_variaveis = 0;
+    acuracia        = 0.0;
+    dominancia      = 0;
+    crowding        = 0.0;
+    nr_variaveis    = 0;
 
 }
 
